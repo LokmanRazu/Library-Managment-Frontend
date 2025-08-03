@@ -28,7 +28,7 @@ const BookDetail = () => {
       <Booksdata title={'See other books'} />
     </section>
 
-  )
+  ) 
 }
 
 export default BookDetail;

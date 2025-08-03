@@ -16,7 +16,7 @@ const BookPage = () => {
             <BookCard book={book} key={book.id} />
           ))
         }
-      </div>
+      </div> 
     </div>
   )
 }

@@ -4,8 +4,11 @@ import Home from './Pages/Home/Home';
 import Books from "./Pages/Browsebook/Books";
 import AddBooks from "./Pages/Addbooks/AddBooks";
 import BookDetail from "./Pages/Bookdetail/BookDetail";
+import Login from "./Pages/sign/login";
 import Error from "./Pages/Error/Error";
 import BookPage from "./Components/BookPage";
+import SignUp from "./Pages/sign/sginUp";
+import MyBooks from "./Pages/myBooks/myBooks";
 const router = createBrowserRouter([
     {
         path:'/',
@@ -27,7 +30,17 @@ const router = createBrowserRouter([
             },{
                 path:'/books/:catergory',
                 element:<BookPage />
+            },{
+                path:'/login',
+                element:<Login />
+            },{
+                path:'signup',
+                element:<SignUp />
+            },{
+                path:'myBooks',
+                element:<MyBooks />
             }
+
         ],
         errorElement:<Error />
     },

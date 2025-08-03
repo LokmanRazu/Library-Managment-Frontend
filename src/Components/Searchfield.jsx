@@ -7,6 +7,7 @@ const Searchfield = ({handleText}) => {
         <input type="text" placeholder='Search by Book name or Author' className='pl-4 pr-7 md:w-1/2 w-full h-14 outline-none border-2 border-gray-500' onChange={(e)=> handleSearch(e.target.value)} />
       </div>
   )
-}
+} 
+
 
 export default Searchfield

@@ -15,7 +15,7 @@ const BookCard = ({ book }) => {
       <p className='font-Poppins text-sm font-medium mt-1 text-orange-500'>Ratings {book.rating}+</p>
       <Link to={`/book/${book.id}`}><button className='font-Poppins px-2 py-1.5 bg-black text-white text-xs float-right'>View details</button></Link>
     </div>
-  )
+  ) 
 }
 
 export default BookCard;

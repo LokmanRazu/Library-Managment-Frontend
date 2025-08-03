@@ -10,7 +10,7 @@ const Categories = () => {
                 <Tabbutton to='/books/non_fiction'>Non-Fiction</Tabbutton>
                 <Tabbutton to='/books/fantacy'>Fantacy</Tabbutton>
                 <Tabbutton to='/books/crime'>Crime</Tabbutton>
-            </div>
+            </div> 
         </div>)
 }
 export default Categories;
