@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000/', 
+  baseURL: 'https://library-managment-backend-8t6a.onrender.com/', 
   withCredentials: true, // send cookies with requests
 });
 
