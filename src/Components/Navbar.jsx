@@ -23,10 +23,11 @@ const Navbar = () => {
                 <ul className="hidden md:flex items-center gap-5 text-medium font-base cursor-pointer">
                     <Link to='/' className="hover:scale-110 duration-500 hover:text-red-500"><li> Home</li></Link>
                     <Link to='/browsebook' className="hover:scale-110 duration-500 hover:text-red-500"><li>Browse Book</li></Link>
-                    <Link to="/addbooks" className="hover:scale-110 duration-500 hover:text-red-500"><li>Add books</li></Link>
+                 
 
                     {user ? (
                         <>
+                           <Link to="/addbooks" className="hover:scale-110 duration-500 hover:text-red-500"><li>Add books</li></Link>
                             <Link to="/myBooks" className="hover:scale-110 duration-500 hover:text-red-500">
                                 <li>MyBooks</li>
                             </Link>
@@ -52,9 +53,10 @@ const Navbar = () => {
                     <ul className="md:hidden flex flex-col justify-start gap-5 bg-black rounded-sm text-white w-full text-medium font-base cursor-pointer p-3">
                         <Link to='/'><li>Home</li></Link>
                         <Link to='/browsebook'><li>Browse Book</li></Link>
-                        <Link to="/addbooks"><li>Add books</li></Link>
+                       
                         {user ? (
                             <>
+                                 <Link to="/addbooks"><li>Add books</li></Link>
                                 <Link to="/myBooks"><li>MyBooks</li></Link>
                                 <li onClick={handleLogout}>Logout</li>
                             </>
